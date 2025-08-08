@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoulMTA Discord Szervere - További Információk</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Orbitron:wght@700&display=swap" rel="stylesheet" />
+  <style>
+    /* ===== CSS itt kezdődik ===== */
+
+    /* Alap reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: 'Montserrat', sans-serif;
+      background: radial-gradient(circle at center, #0d0f22 0%, #000000 80%);
+      color: #00ff94;
+      position: relative;
+      overflow-x: hidden;
+      overflow-y: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    /* Animált, mozgó fényes háttércsík */
+    body::before {
+      content: '';
+      position: fixed;
+      top: -30%;
+      left: -40%;
+      width: 200%;
+      height: 160%;
+      background: linear-gradient(
+        120deg,
+        rgba(2, 248, 255, 0.3) 0%,
+        rgba(5, 255, 173, 0.6) 20%,
+        rgba(0, 212, 255, 0.7) 50%,
+        rgba(0, 255, 195, 0.4) 80%,
+        rgba(2, 248, 255, 0.3) 100%
+      );
+      filter: blur(150px);
+      animation: lightMove 25s linear infinite;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    @keyframes lightMove {
+      0% {
+        transform: translateX(0) translateY(0) rotate(0deg);
+      }
+      100% {
+        transform: translateX(50vw) translateY(50vh) rotate(360deg);
+      }
+    }
+
+    /* Több rétegű csillag animáció */
+    .stars, .stars2, .stars3 {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0; left: 0;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .stars {
+      background:
+        radial-gradient(2px 2px at 10% 20%, #00ffe3, transparent),
+        radial-gradient(1.5px 1.5px at 40% 60%, #00ffa8, transparent),
+        radial-gradient(2.5px 2.5px at 80% 40%, #00fff5, transparent);
+      background-repeat: repeat;
+      background-size: 100% 100%;
+      animation: twinkle 7s ease-in-out infinite alternate;
+    }
+
+    .stars2 {
+      background:
+        radial-gradient(1.2px 1.2px at 25% 30%, #0ef7bb, transparent),
+        radial-gradient(1.7px 1.7px at 65% 50%, #00ffaf, transparent);
+      background-repeat: repeat;
+      background-size: 100% 100%;
+      animation: twinkle 10s ease-in-out infinite alternate;
+      animation-delay: 2s;
+    }
+
+    .stars3 {
+      background:
+        radial-gradient(1px 1px at 35% 10%, #00ffc7, transparent),
+        radial-gradient(2px 2px at 85% 75%, #00ffd3, transparent);
+      background-repeat: repeat;
+      background-size: 100% 100%;
+      animation: twinkle 5s ease-in-out infinite alternate;
+      animation-delay: 4s;
+    }
+
+    @keyframes twinkle {
+      0% {
+        opacity: 0.4;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    /* Tartalom doboz */
+    .container {
+      background: rgba(0, 0, 0, 0.85);
+      border-radius: 15px;
+      padding: 2rem 3rem;
+      max-width: 600px;
+      box-shadow: 0 0 20px #00ff94;
+      position: relative;
+      z-index: 10;
+      text-align: center;
+    }
+
+    /* Logó */
+    .logo {
+      width: 150px;
+      margin-bottom: 20px;
+      filter: drop-shadow(0 0 10px #00ff94);
+    }
+
+    /* Cím */
+    h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-weight: 700;
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+      color: #00ff94;
+      text-shadow:
+        0 0 5px #00ff94,
+        0 0 10px #00ff94,
+        0 0 20px #00ff94;
+    }
+
+    /* Szöveg */
+    p {
+      margin-bottom: 15px;
+      font-size: 1.2rem;
+      color: #c1ffc1;
+      text-shadow: 0 0 4px #008f5f;
+    }
+
+    /* Gombok */
+    .buttons {
+      margin-top: 25px;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    .btn {
+      background-color: #00ff94;
+      border: none;
+      color: #003300;
+      font-weight: 700;
+      padding: 12px 30px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-size: 1.1rem;
+      text-decoration: none;
+      display: inline-block;
+      box-shadow:
+        0 0 10px #00ff94,
+        0 0 20px #00ff94;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
+    }
+
+    .btn:hover, .btn:focus {
+      background-color: #00cc6a;
+      color: #e0ffe0;
+      transform: scale(1.05);
+      box-shadow:
+        0 0 15px #00cc6a,
+        0 0 30px #00cc6a;
+      outline: none;
+    }
+
+    /* Link gomboknak */
+    a.btn {
+      text-align: center;
+    }
+
+  </style>
+</head>
+<body>
+  <!-- Animált csillagos rétegek -->
+  <div class="stars"></div>
+  <div class="stars2"></div>
+  <div class="stars3"></div>
+
+  <div class="container">
+    <img src="file:///C:/Users/EliteDesk/Downloads/ChatGPT%20Image%207.%208.%202025,%2023_25_55.png" alt="SoulMTA Logo" class="logo" />
+    <h1>SoulMTA Discord Szervere - További Információk</h1>
+    <p><strong>Szerver IP:</strong> hamarosan...</p>
+    <p><strong>Port:</strong> hamarosan...</p>
+    <p>Csatlakozz a Discord szerverünkhöz, hogy az elsők között értesülj a fejlesztésekről és eseményekről!</p>
+
+    <div class="buttons">
+      <a href="https://discord.gg/denhgfmE" target="_blank" rel="noopener noreferrer" class="btn">Discord</a>
+      <a href="https://www.youtube.com/channel/HAMAROSSAN" target="_blank" rel="noopener noreferrer" class="btn">YouTube</a>
+      <a href="file:///C:/Users/EliteDesk/Desktop/soulmta/SoulMTA.html" target="_blank" rel="noopener noreferrer" class="btn">SoulMTA Csapata</a>
+      <a href="file:///C:/Users/EliteDesk/Desktop/web/index.html" class="btn">Vissza a főoldalra</a>
+    </div>
+  </div>
+</body>
+</html>

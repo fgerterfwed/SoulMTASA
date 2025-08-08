@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SoulMTA Csapata</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    body {
+      margin: 0;
+      background: linear-gradient(135deg, #141e30, #243b55);
+      font-family: 'Roboto', sans-serif;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    header h1 {
+      font-weight: 700;
+      font-size: 2.8rem;
+      color: #39ff14;
+      text-shadow: 0 0 10px #39ff14;
+    }
+
+    .team-container {
+      display: flex;
+      gap: 2rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      max-width: 900px;
+      width: 100%;
+    }
+
+    .member-card {
+      background: rgba(57, 255, 20, 0.15);
+      border: 2px solid #39ff14;
+      border-radius: 12px;
+      padding: 1.5rem;
+      flex: 1 1 250px;
+      box-shadow: 0 0 15px #39ff14;
+      transition: transform 0.3s ease;
+      text-align: center;
+    }
+
+    .member-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 0 25px #00ff00;
+    }
+
+    .member-photo {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 3px solid #39ff14;
+      object-fit: cover;
+      margin-bottom: 1rem;
+      box-shadow: 0 0 10px #39ff14;
+    }
+
+    .member-name {
+      font-weight: 700;
+      font-size: 1.4rem;
+      margin-bottom: 0.3rem;
+    }
+
+    .member-role {
+      font-style: italic;
+      color: #a8f0a2;
+      margin-bottom: 1rem;
+    }
+
+    footer {
+      margin-top: auto;
+      font-size: 0.9rem;
+      color: #6fa96f;
+      text-align: center;
+      padding: 1rem 0;
+    }
+
+    a.button-link {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 10px 25px;
+      background-color: #39ff14;
+      color: #141e30;
+      font-weight: 700;
+      border-radius: 8px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 0 10px #39ff14;
+    }
+
+    a.button-link:hover {
+      background-color: #2ccc0e;
+      box-shadow: 0 0 20px #2ccc0e;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>SoulMTA Csapata</h1>
+    <a href="file:///C:/Users/EliteDesk/Desktop/web/index.html" class="button-link">Vissza a kezdőoldalra</a>
+  </header>
+
+  <section class="team-container">
+    <article class="member-card">
+      <img src="file:///C:/Users/EliteDesk/Downloads/13854-dark-boy.png" alt="Csapat tag 1" class="member-photo" />
+      <h2 class="member-name">Kevin</h2>
+      <p class="member-role">Szerver Tulajdonos,Fejlesztő</p>
+      <p>Felelős a szerver működtetéséért és a közösség támogatásáért.</p>
+    </article>
+
+  <section class="team-container">
+    <article class="member-card">
+      <img src="file:///C:/Users/EliteDesk/Pictures/Screenshots/K%C3%A9perny%C5%91k%C3%A9p%202025-08-08%20165252.png" alt="Csapat tag 1" class="member-photo" />
+      <h2 class="member-name">Mercédesz</h2>
+      <p class="member-role">Szerver Tulajdonos,Fejlesztő</p>
+      <p>Felelős a szerver működtetéséért és a közösség támogatásáért.</p>
+    </article>
+
+    <article class="member-card">
+      <img src="file:///C:/Users/EliteDesk/Pictures/Screenshots/K%C3%A9perny%C5%91k%C3%A9p%202025-08-08%20165533.png" alt="Csapat tag 2" class="member-photo" />
+      <h2 class="member-name">Bence</h2>
+      <p class="member-role">Admin 1</p>
+      <p>Nézi és őrzi az embereket nem e csalnak nem e veszekednek!.</p>
+    </article>
+
+    <article class="member-card">
+      <img src="file:///C:/Users/EliteDesk/Pictures/Screenshots/K%C3%A9perny%C5%91k%C3%A9p%202025-08-08%20165634.png" alt="Csapat tag 3" class="member-photo" />
+      <h2 class="member-name">RazerZ 27</h2>
+      <p class="member-role">Admin 1</p>
+      <p>Figyeli a chatet és biztosítja a szabályok betartását.</p>
+    </article>
+  </section>
+
+  <footer>
+    &copy; 2025 SoulMTA Csapat | Minden jog fenntartva
+  </footer>
+
+</body>
+</html>
